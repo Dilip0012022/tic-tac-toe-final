@@ -47,6 +47,10 @@ function isLOggedIn(req, res, next) {
     }
 }
 
+app.get("/",(req,res)=>{
+    return res.sendFile("index.html")
+})
+
 app.get("/auth/google",
     passport.authenticate('google', { scope: ["email", 'profile'] })
 )
