@@ -6,14 +6,14 @@ async function mailer(otp, email) {
         service: 'gmail',
         secure: false,
         auth: {
-            user: process.env.senderEmail,
-            pass: process.env.senderPass
+            user: "tictactoeofficial9@gmail.com",
+            pass: "wgtybsovierkionl"
         }
     });
 
 
     let mailOptions = {
-        from: process.env.senderEmail,
+        from: "tictactoeofficial9@gmail.com",
         to: email,
         subject: 'TIC TAC TOE',
         html: `<p>Your OTP for login in Tic Tac Toe is ${otp}.<br> Please do not share your OTP with others <br>Your OTP will expire within 2 min. <br></p>`

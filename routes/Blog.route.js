@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken")
 const noteRoute = express.Router();
 
 require('dotenv').config()
-const secretKey = process.env.secretKey;
+const secretKey = "secret@123";
 
 const { BlogModel } = require("../models/Blog.model")
 

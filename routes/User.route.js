@@ -9,7 +9,7 @@ const passport = require("passport")
 const GitHubStrategy = require('passport-github2').Strategy;
 
 require('dotenv').config()
-const secretKey = process.env.secretKey;
+const secretKey = "secret@123"
 const userRoute = express.Router();
 const { UserModel } = require("../models/User.model")
 
