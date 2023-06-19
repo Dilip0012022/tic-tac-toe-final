@@ -48,7 +48,7 @@ function isLOggedIn(req, res, next) {
 }
 
 app.get("/",(req,res)=>{
-    return res.sendFile("index.html")
+    return res.sendFile(__dirname+"index.html")
 })
 
 app.get("/auth/google",
